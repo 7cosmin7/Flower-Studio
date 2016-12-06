@@ -1,0 +1,320 @@
+*{
+	box-sizing:border-box;
+	margin:0px;
+	padding:0px;
+}
+
+/*-----------------------------
+small-menu---
+--------------------------------*/
+.menu{ 
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: auto;
+	display:none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index:1;
+    top: 80px;
+    left: 0;
+    background-color: #111;
+    overflow-x:hidden ;
+    transition: 0.5s;
+    padding-top: 60px;
+	
+	
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 45px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 45px;
+    margin-left: 50px;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------
+navigation bar ---- logo and nav-bar
+-------------------------------------------------------------------------------------------------*/
+
+.site-header{
+	background-color:white;
+	color:#333;
+	position:fixed;	
+	top:0;
+	left:0;	
+	width:100%;
+	height:auto;
+	z-index:999;
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	align-items:center;	
+	box-shadow:2px 2px 5px black;
+	-webkit-box-shadow:2px 2px 5px black;
+	-moz-box-shadow:2px 2px 5px black;
+}
+ 
+#logo img{
+	width:250px;
+	height:auto;
+}
+
+.site-nav {
+	display:flex;
+	margin-left:auto;	
+}
+.site-nav ul {
+	display:flex;
+	list-style:none;	
+	margin:0;
+	padding:0px;
+}
+.site-nav ul li a{
+	text-decoration:none;
+	display:inline-block;
+	padding:20px;
+	color:#404040;
+	font-size:25px;
+	font-weight:bolder;
+	font-family: 'Josefin Sans', sans-serif;
+	 /*font-family: 'Roboto Mono', monospace;*/
+	 /*font-family: 'Indie Flower', cursive;*/
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+}
+.site-nav ul li a.active{
+	color: #e63900;
+}
+.site-nav  ul  li a:hover{ 
+	color: #e63900;
+	 -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+/*-------------------------------------------------------
+section one
+--------------------------------------------*/
+.one{
+	height:730px;
+	width:100%;
+	background-repeat:no-repeat;
+    background-size:cover; 
+}
+
+.one img {
+    position:absolute;
+    width:100%;
+    height:730px;
+}
+@-webkit-keyframes xfade {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity:1;
+    }
+    40% {
+        opacity:0;
+    }
+    80% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@keyframes xfade {
+    0% {
+        opacity: 1;
+    }
+    12% {
+        opacity:1;
+    }
+    25% {
+        opacity:0;
+    }
+    69% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+.one img:nth-child(4) {
+    -webkit-animation: xfade 25s 0s infinite;	
+    animation: xfade 15s 0s infinite;
+}
+.one img:nth-child(3) {
+    -webkit-animation: xfade 25s 5s infinite;
+    animation: xfade 15s 3s infinite;
+}
+.one img:nth-child(2) {
+    -webkit-animation: xfade 25s 10s infinite;
+    animation: xfade 15s 6s infinite;
+}
+.one img:nth-child(1) {
+    -webkit-animation: xfade 25s 15s infinite;
+    animation: xfade 15s 10s infinite;
+}
+
+/*-------------------------------------------------------
+section two
+--------------------------------------------*/
+
+.two{
+	background-image:url("images/abstract1.jpg");
+	background-repeat:no-repeat;
+    background-size:cover;
+	border:;
+	width:100%;
+	height:auto;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+.two h3{
+	color:#FF6600;
+	margin-left:5px;
+	font-size:25px;
+	font-family:'Kaushan Script', cursive;
+	font-weight:bolder;
+	text-transform:uppercase;
+}
+
+.two p{
+	color:#ebebe0;
+	font-size:1.2em;
+	font-family: 'Electrolize', sans-serif;
+	line-height:22px;
+	margin-top:10px;
+}
+.intro1, .intro2, .intro3{
+	border:;
+	width:99%;
+	height:auto;
+	margin:auto;	
+	display:flex;
+	margin-top:50px;
+}
+
+.description1, .description2, .description3{
+	
+	width:30%;
+	height:auto;
+	margin:auto;	
+}
+
+.picture1, .picture2, .picture3{
+
+	width:40%;
+	height:250px;
+	margin:auto;
+	margin-top:15px;
+	margin-bottom:15px;
+	border-radius:5px;
+	
+}
+.picture1{
+	background-image:url("images/inspired.jpg");
+    background-repeat:no-repeat;
+    background-size:content;
+	background-attachment:fixed;
+	background-size:100% 900px;
+	-webkit-box-shadow: 0px -1px 15px 2px rgba(235,226,235,1);
+	-moz-box-shadow: 0px -1px 15px 2px rgba(235,226,235,1);
+	box-shadow: 0px -1px 15px 2px rgba(235,226,235,1);
+}
+
+.picture2{
+	background-image:url("images/create.jpg");
+    background-repeat:no-repeat;
+    background-size:content;
+	background-attachment:fixed;
+	background-size:100% 900px;
+	-webkit-box-shadow: 0px -1px 15px 2px rgba(235,226,235,1);
+	-moz-box-shadow: 0px -1px 15px 2px rgba(235,226,235,1);
+	box-shadow: 0px -1px 15px 2px rgba(235,226,235,1);
+}
+
+.picture3{
+	background-image:url("images/wedd.jpg");
+    background-repeat:no-repeat;
+    background-size:content;
+	background-attachment:fixed;
+	background-size:100% 900px;
+	-webkit-box-shadow: 0px -1px 15px 2px rgba(235,226,235,1);
+	-moz-box-shadow: 0px -1px 15px 2px rgba(235,226,235,1);
+	box-shadow: 0px -1px 15px 2px rgba(235,226,235,1);
+}
+
+.footer{
+	color:white;
+	background-image:url("images/footer2.jpg"); 
+	background-repeat:no-repeat;
+    background-size:cover;
+	display:flex;
+	height:50px;
+	align-items:flex-end;
+}
+.copyright{
+	 
+	 /*font-family: 'Josefin Sans', sans-serif; */
+	 /*font-family: 'Roboto Mono', monospace;*/
+	 font-family:'Josefin Sans', sans-serif;
+	 font-weight:bold;
+	 color:white;
+	 margin-left:20px;
+	
+ }
+ 
+ .icons{
+	 
+	 margin-left:auto;
+	 margin-right:20px;
+	 font-size:18px;
+	 color:white;
+	 word-spacing:20px;
+	 
+	 
+ }
+ .icons a{
+	 text-decoration:none;
+	 color:white;
+ }
+ .icons :hover{
+	 color:#e63900;
+ }
+ 
+ 
+
+

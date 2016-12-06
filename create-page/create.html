@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<lang="en-Us">
+<head>
+<title>Flower Studio</title>
+<link rel="icon" href="images/logo.png" type="image/png">
+<meta charset="Utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Josefin+Sans|Electrolize|Kaushan+Script" rel="stylesheet">
+<link rel="icon" href="logo-flower.png" type="image/png">
+<link rel="stylesheet" href="./animation.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link href="create.css" rel="stylesheet">
+<link href="../mediaquery1.css" rel="stylesheet">
+<script src="../script.js"></script>
+
+
+</head>
+<body>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------
+Header
+-------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="../index.html">Home</a>
+  <a href="../inspiration-page/inspiration.html">Inspiration</a>
+  <a href="create.html">Create</a>
+  <a href="../contact-page/contact.html">Say Hello</a>
+</div> 
+
+ <header class="site-header">
+     <div id="logo">
+	 <img src="../images/Floral-Studio.png"/>
+	 </div>
+	 <nav class="site-nav animated fadeInRight">
+	   <ul>
+	        <li><a class="hvr-float" href="../index.html">Home</a></li>
+			<li><a class="hvr-float" href="../inspiration-page/inspiration.html">Inspiration</a></li>
+			<li><a class="active hvr-float" href="create.html">Create</a></li>
+			<li><a class="hvr-float" href="../contact-page/contact.html">Say Hello</a></li>
+	 
+	   </ul>
+	  </nav>
+	  
+	  <span class="menu" onclick="openNav()">&#9776</span>
+	 
+   </header>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------
+Section One
+-------------------------------------------------------------------------------------------------------------------------------------------------------->
+<h2 class="welcome animated fadeInLeft">Create your bouquet by selecting a flower from each color section.</h2>
+ 
+ <section class="project">
+    <div class="stems">
+	<form id="myForm">
+	
+	  <div class="stems1">
+	   <div class="yellow">
+	       <div class="img1">
+	            <img src="images/stems/rsz_galben1.jpg"/>
+		        <label><input type="radio" name="yellows[]" id="y1-checkbox">Gerb</label>
+	        </div>
+			
+			<div class="img2">
+	           <img src="images/stems/rsz_galben2.jpg"/>
+		       <label><input type="radio" name="yellows[]" id="y2-checkbox" >Lily</label>
+	        </div>
+	  
+	        <div class="img3">
+	           <img src="images/stems/rsz_galben3.jpg"/>
+		       <label><input type="radio" name="yellows[]" id="y3-checkbox">Rose</label>
+	        </div>
+	  
+		    
+	        <div class="img4">
+	           <img src="images/stems/rsz_galben4.jpg"/>
+		       <label><input type="radio" name="yellows[]" id="y4-checkbox">Fresia</label>
+	        </div>
+	   </div>
+	   
+	   <div class="red">
+	       <div class="img1">
+	            <img src="images/stems/rsz_red1.jpg"/>
+		        <label><input type="radio" name="reds[]" id="r1-checkbox">Rose</label>
+	         </div>
+			 
+			<div class="img2">
+	            <img src="images/stems/rsz_red2.jpg"/>
+		         <label><input type="radio" name="reds[]" id="r2-checkbox" >Peony</label>
+	         </div>
+	  
+	         <div class="img3">
+	            <img src="images/stems/rsz_red3.jpg"/>
+		        <label><input type="radio" name="reds[]" id="r3-checkbox">Hyp</label>
+	         </div>
+	
+		     <div class="img4">
+	            <img src="images/stems/rsz_red4.jpg"/>
+		        <label><input type="radio" name="reds[]" id="r4-checkbox">Gerb</label>
+	         </div>
+			 
+	   </div>
+	  </div>
+	  
+	  <div class="stems2">
+	  
+	   <div class="white">
+	     <div class="img1">
+	            <img src="images/stems/rsz_alb1.jpg"/>
+		        <label><input type="radio" name="whites[]" id="w1-checkbox">Gyp</label>
+	         </div>
+	  
+	         <div class="img2">
+	            <img src="images/stems/rsz_alb2.jpg"/>
+		        <label><input type="radio" name="whites[]" id="w2-checkbox" >Cala</label>
+	         </div>
+	  
+	         <div class="img3">
+	            <img src="images/stems/rsz_alb3.jpg"/>
+		        <label><input type="radio" name="whites[]" id="w3-checkbox">Tulip</label>
+	         </div>
+	  
+		     <div class="img4">
+	            <img src="images/stems/rsz_alb4.jpg"/>
+		        <label><input type="radio" name="whites[]" id="w4-checkbox">Rose</label>
+	         </div>
+	   </div>
+	   
+	      <div class="pink">
+	         <div class="img1">
+	            <img src="images/stems/rsz_pink1.jpg"/>
+		        <label><input type="radio" name="pinks[]" id="p1-checkbox">Alstro</label>
+	         </div>
+	  
+	         <div class="img2">
+	            <img src="images/stems/rsz_pink2.jpg"/>
+		        <label><input type="radio" name="pinks[]" id="p2-checkbox" >Rose</label>
+	         </div>
+	  
+	         <div class="img3">
+	            <img src="images/stems/rsz_pink3.jpg"/>
+		        <label><input type="radio" name="pinks[]" id="p3-checkbox">Lily</label>
+	         </div>
+	  
+		     <div class="img4">
+	            <img src="images/stems/rsz_pink4.jpg"/>
+		        <label><input type="radio" name="pinks[]" id="p4-checkbox">Gerb</label>
+	         </div>
+	   </div>
+	   
+	  </div>
+	   <div class="foliage">
+	   
+	        <div class="img1">
+	            <img src="images/stems/rsz_foliage1.jpg"/>
+		        <label><input type="radio" name="fols[]" id="f1-checkbox">Euc</label>
+	         </div>
+	  
+	         <div class="img2">
+	            <img src="images/stems/rsz_foliage2.jpg"/>
+		        <label><input type="radio" name="fols[]" id="f2-checkbox" >Palm</label>
+	         </div>
+	  
+	         <div class="img3">
+	            <img src="images/stems/rsz_foliage3.jpg"/>
+		        <label><input type="radio" name="fols[]" id="f3-checkbox">Salal</label>
+	         </div>
+	  
+		     <div class="img4">
+	            <img src="images/stems/rsz_foliage4.jpg"/>
+		        <label><input type="radio" name="fols[]" id="f4-checkbox">Parvei</label>
+	         </div>	
+			 </form>
+			 
+	   </div>
+	   
+ 	</div>
+	
+	<div class="result">
+	    <div id="bouquet">
+		<h1 class="reset_style"> Your Bouquet</h1>
+		</div>
+		
+		<div id="button">
+		    <button type="button" id="btn">Create</button>
+			<button type="button" id="btn_reset">Reset</button>
+		 </div>		
+	</div>
+ 
+ 
+ </section>
+
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------
+Footer
+-->
+   <div class="footer">
+
+     <div class="copyright ">© 2016 Floral Studio </div>
+	 	 <div class="icons">
+		 <a href="#"><i class="fa fa-twitter" ></i>
+         <a href="#"><i class="fa fa-facebook-f"></i></a>
+         <a href="#"><i class="fa fa-instagram"></i></a>
+   </div>
+   
+   </footer>
+	<script>
+	
+ var x= document.getElementById("btn"); 
+    x.addEventListener("click", show_img); 
+	
+ var y= document.getElementById("btn_reset"); 
+    y.addEventListener("click", reset_img); 
+  
+  function reset_img(){
+  document.getElementById("myForm").reset();
+  document.getElementById("bouquet").innerHTML="<img src='images/again.png' width=100% height=300px;>";
+  }
+ 
+  function show_img(){
+	
+  var fl1= document.getElementById("y1-checkbox");
+  var fl2= document.getElementById("y2-checkbox");
+  var fl3= document.getElementById("y3-checkbox");
+  var fl4= document.getElementById("y4-checkbox");
+  
+  var fl5= document.getElementById("r1-checkbox");
+  var fl6= document.getElementById("r2-checkbox");
+  var fl7= document.getElementById("r3-checkbox");
+  var fl8= document.getElementById("r4-checkbox");
+ 
+  var fl9= document.getElementById("w1-checkbox");
+  var fl10= document.getElementById("w2-checkbox");
+  var fl11= document.getElementById("w3-checkbox");
+  var fl12= document.getElementById("w4-checkbox");
+ 
+  var fl13= document.getElementById("p1-checkbox");
+  var fl14= document.getElementById("p2-checkbox");
+  var fl15= document.getElementById("p3-checkbox");
+  var fl16= document.getElementById("p4-checkbox");
+
+  var fl17= document.getElementById("f1-checkbox");
+  var fl18= document.getElementById("f2-checkbox");
+  var fl19= document.getElementById("f3-checkbox");
+  var fl20= document.getElementById("f4-checkbox");
+ 
+  
+
+  
+  
+if (fl1.checked && fl8.checked && fl9.checked && fl16.checked && fl19.checked){
+  document.getElementById("bouquet").innerHTML="<img src='images/bouquets/rsz_bq1.jpg' width=100% height=320px>";	
+ }
+else if (fl3.checked && fl5.checked && fl12.checked && fl14.checked && fl19.checked){
+  document.getElementById("bouquet").innerHTML="<img src='images/bouquets/rsz_bq2.jpg'  width=100% height=320px>";	
+ }
+else if (fl4.checked && fl7.checked && fl10.checked && fl15.checked && fl20.checked){
+  document.getElementById("bouquet").innerHTML="<img src='images/bouquets/rsz_bq3.jpg' width=100% height=320px>";	
+ }
+else if (fl1.checked && fl7.checked && fl10.checked && fl15.checked && fl17.checked){
+  document.getElementById("bouquet").innerHTML="<img src='images/bouquets/rsz_bq4.jpg' width=100% height=320px>";	
+ }
+else if (fl2.checked && fl6.checked && fl12.checked && fl14.checked && fl18.checked){
+  document.getElementById("bouquet").innerHTML="<img src='images/bouquets/rsz_bq5.jpg' width=100% height=320px>";	
+ }
+else if (fl1.checked && fl8.checked && fl11.checked && fl15.checked && fl20.checked){
+  document.getElementById("bouquet").innerHTML="<img src='images/bouquets/rsz_bq6.jpg' width=100% height=320px>";	
+ }
+ else if (fl3.checked && fl6.checked && fl9.checked && fl14.checked && fl18.checked){
+  document.getElementById("bouquet").innerHTML="<img src='images/bouquets/rsz_bq7.jpg' width=100% height=320px>";	
+ }
+ else{		
+var a=document.getElementById("bouquet");
+a.innerHTML="Wrong selection!";
+a.style.fontSize="2em";
+a.style.color="white";
+}
+}	
+ 
+ 
+
+</script>
+	
+</body>
+</html>

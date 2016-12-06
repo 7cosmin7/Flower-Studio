@@ -1,0 +1,40 @@
+/* 
+-------------------------------------------------------------------------------------------------------------------
+Navigation-Bar
+Underline Reveal
+-------------------------------------------------------------------------------------------------------------------
+ */
+/* Float Shadow */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 80%;
+  transition-duration: 0.8s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8x);
+  /* move the element up by 5px */
+}
+.hvr-float:hover:before, .hvr-float:focus:before, .hvr-float:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+/*
+-------------------------------------------------------------------------------------------------------------------------
+First section-element
+-------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+	
+
